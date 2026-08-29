@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Colophon
-email: thscolophon@gmail.com
+title: THSMUNC
+email: 
 description: | # this means to ignore newlines until "baseurl:"
-  This site is home to Towson High School's nationally award-winning literary-arts magazine: Colophon.
+  This site is home to Towson High School's Model United Nations Conference.
 
   Towson High School
   69 Cedar Ave
