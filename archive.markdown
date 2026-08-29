@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Archive
-permalink: /archive/
+title: Background Guides
+permalink: /background_guides/
 ---
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archive</title>
+    <title>Background Guides</title>
     <style>
         /* Minimal styling focused only on the PDF viewer */
         .pdf-controls {
@@ -70,12 +70,12 @@ permalink: /archive/
 <body>
     <div class="pdf-container">
         <div class="pdf-controls">
-            <label for="pdf-select">Please select the edition of Colophon you would like to view by using the dropdown menu below:</label>
+            <label for="pdf-select">Please select the background guide of the committee you would like to view by using the dropdown menu below:</label>
             <select id="pdf-select">
-                <option value="">Choose an Edition</option>
-                <option value="/source/pdfs/Colophon_2023_Volume_57.pdf">Colophon 2023 Volume 57</option>
-                <option value="/source/pdfs/Colophon_2024_Volume_58.pdf">Colophon 2024 Volume 58</option>
-                <option value="/source/pdfs/Colophon_2025_Volume_59.pdf">Colophon 2025 Volume 59</option>
+                <option value="">Choose a Committee</option>
+                <option value="/source/pdfs/Committee I.pdf">Committee I</option>
+                <option value="/source/pdfs/Committee II.pdf">Committee II</option>
+                <option value="/source/pdfs/Committee III.pdf">Committee III</option>
             </select>
         </div>
         
