@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+    <style>
+        /* Site title link */
+        h1 a {
+            color: #550000;
+            text-decoration: none;
+            transition: font-weight 0.2s ease; /* smooth bold transition */
+        }
+
+        h1 a:hover {
+            color: #550000;
+            font-weight: bold;
+        }
+
+        /* Header/vertical nav links */
+        .nav-links a {
+            color: #550000;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block; /* makes sure each link takes full width on its own line */
+            font-weight: normal;
+            transition: font-weight 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #550000;
+            font-weight: bold;
+        }
+
+        .site-footer {
+            clear: both;
+            width: 100%;
+            text-align: center;
+            -webkit-font-smoothing: subpixel-antialiased;
+            padding: 15px 0;
+        }
+
+        .footer-content {
+             display: inline-block;
+            text-align: center;
+        }
+
+        .footer-icon {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto 0.5rem auto;
+        }
+
+        .footer-content small {
+            color: #550000;
+            display: block;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="/source/images/logo.png" alt="Site Logo" width="150" style="display: block; margin: 0 auto 1rem;">
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+
+        <p>{{ site.description | newline_to_br }}</p>
+
+        <nav class="nav-links">
+            {%- for page in site.pages -%}
+            <a href="{{ page.url }}">{{ page.title | escape }}</a>
+            {%- endfor -%}
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeue2WTupdXOr2cLhJDbk3SunPgwkadx-4XUrakSkAHq27p3w/viewform" target="_blank">Submit</a>
+        </nav>
+      </header>
+      <section>
+      {{ content }}
+      </section>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="https://instagram.com/thscolophon" target="_blank">
+                <img src="/source/images/instagram.svg" alt="Instagram" class="footer-icon">
+            </a>
+            <small>© 2025 THS Colophon. All Rights Reserved.</small>
+        </div>
+    </footer>
+  </body>
+</html>
