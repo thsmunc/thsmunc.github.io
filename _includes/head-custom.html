@@ -1,0 +1,21 @@
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+<title>Colophon</title>
+
+<!-- Setup Google Analytics -->
+{% include head-custom-google-analytics.html %}
+
+<!-- Universal Favicon -->
+<link rel="icon" href="{{ '/source/images/favicon.ico' | relative_url }}" type="image/x-icon">
+
+<!-- PNG fallback for devices that prefer PNG (optional but recommended) -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/source/images/favicon.ico' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/source/images/favicon.ico' | relative_url }}">
+
+<!-- Apple Touch Icon for iOS devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/source/images/favicon.ico' | relative_url }}">
+
+<!-- Windows/Edge tile -->
+<meta name="msapplication-TileImage" content="{{ '/source/images/favicon.ico' | relative_url }}">
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<!-- end custom head snippets -->
